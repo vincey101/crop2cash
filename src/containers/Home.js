@@ -13,7 +13,7 @@ import {
   Responsive,
   Segment,
   Sidebar,
-  Visibility
+  Visibility,
 } from "semantic-ui-react";
 
 const getWidth = () => {
@@ -45,7 +45,7 @@ class DesktopContainer extends Component {
 }
 
 DesktopContainer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 class MobileContainer extends Component {
@@ -72,7 +72,7 @@ class MobileContainer extends Component {
 }
 
 MobileContainer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 const ResponsiveContainer = ({ children }) => (
@@ -83,7 +83,7 @@ const ResponsiveContainer = ({ children }) => (
 );
 
 ResponsiveContainer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 const HomepageLayout = () => (
@@ -93,19 +93,21 @@ const HomepageLayout = () => (
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              We Help Companies and Companions
+              We Help Companies and Individuals
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              We can give your company superpowers to do things that they never
-              thought possible. Let us delight your customers and empower your
-              needs... through pure data analytics.
+              'We build technology solutions to agricultural challenges. We have
+              products that help food processors to manage outgrower schemes and
+              we have a mobile money platform that makes it easy for smallholder
+              farmers to pay and get paid using their phone number'
             </p>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              We Make Bananas That Can Dance
+              Manage your supply chain digitally with us.
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              Yes that's right, you thought it was the stuff of dreams, but even
-              bananas can be bioengineered.
+              We are digitalizing the value chain of food crops by building
+              tools for agro-processors, easing activities like weighing,
+              quality control, extension services among others.
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
@@ -141,7 +143,7 @@ const HomepageLayout = () => (
             </Header>
             <p style={{ fontSize: "1.33em" }}>
               <Image avatar src="/images/avatar/large/nan.jpg" />
-              <b>Nan</b> Chief Fun Officer Acme Toys
+              <b>Nan</b> Now i have seen the light
             </p>
           </Grid.Column>
         </Grid.Row>
