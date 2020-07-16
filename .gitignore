@@ -4,5 +4,5 @@ env
 db.sqlite3
 node_modules
 # build
-static
+# static
 package-lock.json
