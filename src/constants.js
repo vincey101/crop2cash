@@ -1,7 +1,7 @@
-const localhost = "http://127.0.0.1:8000";
+const baseUrl = "https://jse-application.herokuapp.com";
 
 const apiURL = "/api";
 
-const endpoint = `${localhost}${apiURL}`;
+const endpoint = `${baseUrl}${apiURL}`;
 
 export const productListURL = `${endpoint}/product-list/`;
